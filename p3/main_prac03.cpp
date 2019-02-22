@@ -1,7 +1,10 @@
-/*---------------------------------------------------------*/
-/* ----------------   Práctica 3 --------------------------*/
+ï»¿/*---------------------------------------------------------*/
+/* ----------------   Prç•¶tica 3 --------------------------*/
 /*-----------------    2019-2   ---------------------------*/
-/*------------- Computación gráfica e interacción humano computadora ---------------*/
+/*------------- Computaciî‰¢ grç•´ica e interacciî‰¢ humano computadora ---------------*/
+/*------------- Miramontes Sarabia Luis Enrique  ---------------------------*/
+/*------------- Visual Studio 2017  ---------------------------*/
+/*------------- PrÃ¡ctica 3 trabajo en clase  ---------------------------*/
 #include <glew.h>
 #include <glfw3.h>
 
@@ -281,7 +284,7 @@ int main()
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		//Mi función de dibujo
+		//Mi funciî‰¢ de dibujo
 		display();
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
@@ -314,6 +317,12 @@ void my_input(GLFWwindow *window)
 
 	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)  //GLFW_RELEASE
 		movZ -= 0.05f;
+
+	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)  //GLFW_RELEASE
+		movY += 0.05f;
+
+	if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)  //GLFW_RELEASE
+		movY -= 0.05f;
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
